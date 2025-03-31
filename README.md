@@ -1,12 +1,16 @@
-# React + Vite
+# ReportScam
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ReportScam is an anonymous reporting platform where users can report fake companies, scams, misleading ads, and fraud cases without logging in.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- **Anonymous Reporting**: No login required.
+- **Report Categories**: Fake companies, scams, misleading ads, fraud.
+- **Admin Dashboard**: Manual review and approval of reports.
+- **User Comments**: Users can add comments under reports.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+- **Frontend**: React, Bootstrap
+- **Database**: Firebase
+- **Authentication**: None (Fully Anonymous)
+- **Admin Panel**: React-based dashboard (to be developed later)
+- **Hosting**: Vercel (Frontend)
