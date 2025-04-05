@@ -1,9 +1,11 @@
 import "./App.css";
 import React from "react";
+import { Navbar } from "./components/index";
 function App() {
   return (
     <>
-      <h1 className="text-primary">Welcome to ReportScam</h1>
+      <Navbar />
+      
     </>
   );
 }
