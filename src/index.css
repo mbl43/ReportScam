@@ -4,3 +4,6 @@ body {
   background-color: var(--background) !important;
   color: var(--text) !important;
 }
+.responsive-heading {
+  font-size: clamp(2rem, 5vw, 3.75rem);
+}

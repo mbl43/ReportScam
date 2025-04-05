@@ -2,13 +2,13 @@
   --primary: #3b82f6;
   --text: #1f2937;
   --muted: #f3f4f6;
-  --white: #ffffff;
+  --white: #1f2937;
   --background:#F9FAFC;
 }
 .dark-mode {
   --primary: #1e3a8a;
   --text: #f3f4f6;
-  --muted: #1f2937;
-  --white: #1f2937;
+  --muted: #1D273A;
+  --white: #95A2B5;
   --background: #030712;
 }
