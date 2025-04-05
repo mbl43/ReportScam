@@ -1,0 +1,6 @@
+@import './style/variable.css';
+
+body {
+  background-color: var(--background) !important;
+  color: var(--text) !important;
+}
