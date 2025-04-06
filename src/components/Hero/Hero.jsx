@@ -1,7 +1,13 @@
+import React, { useState } from "react";
+import Reportform from "../Reportform/Reportform";
 import { ChevronRight } from "lucide-react";
-import React from "react";
 
 const Hero = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleOpen = () => setShowModal(true);
+  const handleClose = () => setShowModal(false);
+
   return (
     <main className="container mx-auto">
       <section style={{ padding: "7.3rem 0" }}>
@@ -14,7 +20,6 @@ const Hero = () => {
               Anonymous. Safe. Empowered.
             </span>
             <h1 className="responsive-heading mt-2 tracking-in-expand">
-             
               &lt; ReportScam /&gt; <br />
               Where people speak up against fraud.
             </h1>
@@ -26,7 +31,10 @@ const Hero = () => {
             </p>
           </div>
           <div className="pt-3">
-            <button className="btn btn-light border-1 rounded-pill border-black m-1 p-2 px-4 fw-normal">
+            <button
+              onClick={handleOpen}
+              className="btn btn-light border-1 rounded-pill border-black m-1 p-2 px-4 fw-normal"
+            >
               Report a Scam
             </button>
             <button className="btn btn-dark border-1 rounded-pill border-white m-1 p-2 px-4 fw-normal">
@@ -35,6 +43,32 @@ const Hero = () => {
           </div>
         </div>
       </section>
+
+      {/* Modal */}
+      {showModal && (
+        <div
+          className="modal d-block"
+          tabIndex="-1"
+          role="dialog"
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
+        >
+          <div className="modal-dialog" role="document">
+            <div className="modal-content p-3">
+              <div className="modal-header">
+                <h5 className="modal-title text-black">Submit Your Report</h5>
+                <button
+                  type="button"
+                  className="btn-close"
+                  onClick={handleClose}
+                ></button>
+              </div>
+              <div className="modal-body">
+                <Reportform />
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </main>
   );
 };
