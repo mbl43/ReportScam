@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Reportform from "../Reportform/Reportform";
 import { ChevronRight } from "lucide-react";
+import { Plus } from "lucide-react";
 
 const Hero = () => {
   const [showModal, setShowModal] = useState(false);
@@ -35,7 +36,7 @@ const Hero = () => {
               onClick={handleOpen}
               className="btn btn-light border-1 rounded-pill border-black m-1 p-2 px-4 fw-normal"
             >
-              Report a Scam
+              Report a Scam <Plus  size={18} />
             </button>
             <button className="btn btn-dark border-1 rounded-pill border-white m-1 p-2 px-4 fw-normal">
               Read Real Experiences <ChevronRight size={18} />
