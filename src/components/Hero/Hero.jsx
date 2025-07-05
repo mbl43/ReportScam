@@ -11,7 +11,7 @@ const Hero = () => {
 
   return (
     <main className="container mx-auto">
-      <section style={{ padding: "7.3rem 0" }}>
+      <section style={{ padding: "7rem 0" }}>
         <div className="mx-auto text-center">
           <div>
             <span
@@ -38,9 +38,9 @@ const Hero = () => {
             >
               Report a Scam <Plus  size={18} />
             </button>
-            <button className="btn btn-dark border-1 rounded-pill border-white m-1 p-2 px-4 fw-normal">
+            <a href="#browse" className="btn btn-dark border-1 rounded-pill border-white m-1 p-2 px-4 fw-normal">
               Read Real Experiences <ChevronRight size={18} />
-            </button>
+            </a>
           </div>
         </div>
       </section>
