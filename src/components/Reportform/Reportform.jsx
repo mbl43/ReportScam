@@ -81,17 +81,17 @@ export default function Reportform() {
       className="p-4 border rounded mx-auto"
       style={{ maxWidth: "500px" }}
     >
-      <h2 className="h4 mb-3 text-black">Report a Scam</h2>
+      <h2 className="h4 mb-3 text-black">Report a Scam </h2>
 
       <div className="mb-3">
         <label htmlFor="title" className="form-label text-black">
-          Title
+        Scam/ Company Name
         </label>
         <input
           type="text"
           id="title"
           name="title"
-          placeholder="Title"
+          placeholder="Scam/ Company Name"
           value={formData.title}
           onChange={handleChange}
           className="form-control"
