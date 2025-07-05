@@ -1,6 +1,6 @@
 import React from "react";
 import Theme from "../../theme/Theme";
-import {  House, Plus, Search } from "lucide-react";
+import {  House, Search } from "lucide-react";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg fixed-top px-3 py-2 shadow-sm" style={{backgroundColor:'var(--background)'}}>
@@ -61,9 +61,7 @@ const Navbar = () => {
        
         <div className="d-flex gap-sm-3 align-items-center justify-content-center mt-sm-3 mt-lg-0 flex-sm-row flex-column">
           <Theme />
-          <button className="rounded-pill d-flex align-items-center gap-1 px-3 py-1">
-            Report Scam <Plus size={18} />
-          </button>
+         
         </div>
       </div>
     </div>
