@@ -59,13 +59,14 @@ const Card = () => {
           <p className="text-center">No reports found.</p>
         ) : (
           data.map((item) => (
-            <div className="col-md-4 mb-4" key={item.id}>
-              <div className="card h-100 shadow-sm">
+            <div className="col-md-4 mb-4 " key={item.id}>
+              
+              <div className="card h-100 shadow-sm"  style={{ backgroundColor: "var(--muted)", color: "var(--text)" }}>
                 <img
                   className="card-img-top"
                   src={
                     item.image_url ||
-                    "https://via.placeholder.com/300x180?text=No+Image"
+                    "https://placehold.co/300x180?text=No+Image"
                   }
                   alt={item.title}
                   style={{
@@ -91,8 +92,8 @@ const Card = () => {
                     )}
                   </p>
                 </div>
-                <div className="card-footer bg-light border-top-0">
-                  <span className="badge bg-secondary">{item.category}</span>
+                <div className="card-footer border-top-0" style={{ backgroundColor: "var(--muted)"}}>
+                  <span className="badge"  style={{ backgroundColor: "var(--text)", color: "var(--background)" }}>{item.category}</span>
                 </div>
               </div>
             </div>
